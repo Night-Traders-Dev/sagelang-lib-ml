@@ -1,29 +1,19 @@
 # ml
 
 ## Purpose
-[Describe the purpose of this SageLang library module.]
+Native Machine Learning framework for SageLang, leveraging hardware acceleration (NPU/GPU).
 
 ## Features
-- [Feature 1]
-- [Feature 2]
-
-## Installation
-Add as a submodule to your SageLang project:
-```bash
-git submodule add <repository-url> core/lib/ml
-```
-
-## API Documentation
-[Link to detailed API documentation]
+- **Tensors**: Core tensor data structure and operations.
+- **Neural Networks**: Layers, models, and training loops.
+- **Optimizers**: SGD, Adam, and others.
+- **Visualization**: Tools for monitoring training progress.
 
 ## Usage Example
 ```sage
-import ml
-# Example usage...
+import ml.tensor
+import ml.nn
+
+let t = tensor.ones([10, 10])
+let model = nn.Sequential([nn.Linear(10, 5), nn.ReLU()])
 ```
-
-## Contributing
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-## License
-MIT (or maintain main project license)
